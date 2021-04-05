@@ -2,10 +2,27 @@
     native: true;
 }
 
-.button, .progress, .slider, .vertical-slider, .horizontal-slider, .vertical-progress, .horizontal-progress, .scrollview, .scrollview-contents {
+.button, .progress, .slider,
+.vertical-slider, .horizontal-slider,
+.vertical-progress, .horizontal-progress,
+.scrollview, .scrollview-contents,
+.tabview, .tabview-content,
+.menubar, .menu, .menu-item {
     background: none;
     border: none;
     border-radius: none;
     color: none;
     padding: none;
+}
+
+.scrollview-contents, .tabview-content {
+    padding: 5px;
+}
+
+.listview .listview-contents {
+    padding: 0px;
+}
+
+.listview .even:selected, .listview .odd:selected {
+    background-color: platform-color(highlight);
 }

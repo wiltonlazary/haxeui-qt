@@ -5,7 +5,10 @@ import qt.widgets.Widget;
 
 class ScrollAreaInitializer extends Initializer {
     public override function run(component:ComponentImpl) {
+        return;
+        trace(component.widget);
         var scrollArea:ScrollArea = cast(component.widget);
+        trace(scrollArea);
         //scrollArea.widgetResizable = true;
         var widget = new Widget();
         scrollArea.widget = widget;
